@@ -1,0 +1,11 @@
+10
+ENGG1111 Computer Programming and Applications
+ENGG1202 Introduction to Computer Science
+COMP2123 Introduction to Database Management Systems
+COMP3270 Artificial Intelligence
+COMP3271 Computer Graphics
+COMP3320 Electronic Commerce Technology
+COMP3330 Interactive Mobile Application Design and Programming
+CCST9047 The Age of Big Data
+CCHU9025 Creativity, Technology and Law
+COMP3322 Modern Technologies on World Wide Web

@@ -1,0 +1,2 @@
+ChangeLog:
+Changed line 8 in assign1q1 so the if condition does not exlude the 2x2 square
