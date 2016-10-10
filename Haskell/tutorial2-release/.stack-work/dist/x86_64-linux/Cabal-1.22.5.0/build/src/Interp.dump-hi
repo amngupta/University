@@ -1,0 +1,296 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-24 11:56:32.475268 UTC
+
+interface tutor_I0JxLUPgaQCBFIX5GfZik4:Interp 7103
+  interface hash: 308540699bb16c7b985081e261cefa2c
+  ABI hash: 82d2492f1ceb7fca82902c327f32b6a2
+  export-list hash: 3d7f6ef1a3ac0e09c16f8548c7cc1996
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interp.bindE
+  Interp.calc
+  Interp.calc2
+  Interp.calc3
+  Interp.evaluate
+  Interp.evaluate2
+  Interp.evaluate3
+  Interp.safeHead
+  Interp.Either{Interp.Left Interp.Right}
+module dependencies: Declare Parser Tokens
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Float e532d434ec2447d809887c0fca1d78a5
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Declare 8c87055b55218bfd55c5cf1fb76568c6
+  exports: 83e0aba052a31fe1618c43675cfe4234
+  Add 9f0ccffe8408fa04a63ecab08d877708
+  Div efa417410a8ef249650d593d10a7616c
+  Exp 14dff50cf252e55f8b3837e78165cde0
+  Log cab05dad402b472151c4cf33420d01cd
+  Mult eef8000aeb91b6663ebca90bd7aa1f1d
+  Num 6317da25236a8db951ed94d26abeacd0
+  Sqrt 10e7543abbec0a64a0fcd66726d70755
+  Sub c6fdf5c34a3511bab710c0cab8004837
+import  -/  Parser 2c25508eca316950f03b17500dbf3408
+  exports: cdf699875decb71aa2b71aa9a45c0f3c
+  parseExpr 0ce159d2f84176668f7146e34d64707d
+54d2eeb435ead1896301df312155eec1
+  $fShowEither ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Show.Show (Interp.Either a b)
+  DFunId[0]
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dShow :: GHC.Show.Show a
+                      $dShow1 :: GHC.Show.Show b.
+                  @ (Interp.Either a b)
+                  (Interp.$fShowEither_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Interp.$fShowEither_$cshow @ a @ b $dShow $dShow1)
+                  (Interp.$fShowEither_$cshowList @ a @ b $dShow $dShow1) -}
+f27457263ed4a8652906316ae9a8ab63
+  $fShowEither1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+49b2fa036c1a2234b0dd9d71f5c79f9c
+  $fShowEither2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Right "#) -}
+3da8785c00c4f11fd650055bd4de0fdb
+  $fShowEither3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Left "#) -}
+1ac69067d6da56b6d13654e5bbd5a3d0
+  $fShowEither4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
+54d2eeb435ead1896301df312155eec1
+  $fShowEither_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    Interp.Either a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   x :: Interp.Either a b ->
+                 case x of wild {
+                   Interp.Left b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Interp.$fShowEither3
+                        (GHC.Show.showsPrec
+                           @ a
+                           $dShow
+                           Interp.$fShowEither4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Interp.Right b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Interp.$fShowEither2
+                        (GHC.Show.showsPrec
+                           @ b
+                           $dShow1
+                           Interp.$fShowEither4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+54d2eeb435ead1896301df312155eec1
+  $fShowEither_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    [Interp.Either a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   $dShow :: GHC.Show.Show a
+                   $dShow1 :: GHC.Show.Show b
+                   eta :: [Interp.Either a b]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Interp.Either a b)
+                   (Interp.$fShowEither_$cshowsPrec
+                      @ a
+                      @ b
+                      $dShow
+                      $dShow1
+                      Interp.$fShowEither1)
+                   eta
+                   eta1) -}
+54d2eeb435ead1896301df312155eec1
+  $fShowEither_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Types.Int -> Interp.Either a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   w2 :: GHC.Types.Int
+                   w3 :: Interp.Either a b ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Interp.$w$cshowsPrec @ a @ b w w1 ww1 w3 }) -}
+54d2eeb435ead1896301df312155eec1
+  $w$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Prim.Int# -> Interp.Either a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><L,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: GHC.Show.Show a
+                   w1 :: GHC.Show.Show b
+                   ww :: GHC.Prim.Int#
+                   w2 :: Interp.Either a b ->
+                 case w2 of wild {
+                   Interp.Left b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w Interp.$fShowEither4 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Interp.$fShowEither3 (g x)
+                        GHC.Types.True
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Interp.$fShowEither3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }
+                   Interp.Right b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ b w1 Interp.$fShowEither4 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11) of wild1 {
+                        GHC.Types.False
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Interp.$fShowEither2 (g x)
+                        GHC.Types.True
+                        -> \ x :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Interp.$fShowEither2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) } }) -}
+54d2eeb435ead1896301df312155eec1
+  data Either a b = Left a | Right b
+    Promotable
+2614a9eea511e95ecaa0ffcd72f12873
+  bindE ::
+    Interp.Either a b -> (b -> Interp.Either a b) -> Interp.Either a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*C1(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b a1 :: Interp.Either a b b1 :: b -> Interp.Either a b ->
+                 case a1 of wild {
+                   Interp.Left msg -> Interp.Left @ a @ b msg
+                   Interp.Right aR -> b1 aR }) -}
+d86b0d13477765c4bebca5bf1ca21457
+  calc :: GHC.Base.String -> GHC.Types.Double
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ a :: GHC.Base.String ->
+                 Interp.evaluate
+                   (Parser.parseExpr1 a)
+                     `cast`
+                   (Parser.NTCo:HappyIdentity[0]
+                        (UnivCo mkUnsafeCo representational (Parser.HappyAbsSyn
+                                                               Declare.Exp
+                                                               Declare.Exp
+                                                               Declare.Exp
+                                                               Declare.Exp) Declare.Exp))) -}
+e05273095248da4377092da9f61f2bb4
+  calc2 ::
+    GHC.Base.String -> Interp.Either GHC.Base.String GHC.Types.Double
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ a :: GHC.Base.String ->
+                 Interp.evaluate2
+                   (Parser.parseExpr1 a)
+                     `cast`
+                   (Parser.NTCo:HappyIdentity[0]
+                        (UnivCo mkUnsafeCo representational (Parser.HappyAbsSyn
+                                                               Declare.Exp
+                                                               Declare.Exp
+                                                               Declare.Exp
+                                                               Declare.Exp) Declare.Exp))) -}
+625b0024043ced53ea67d3e2cb58c26a
+  calc3 ::
+    GHC.Base.String -> Interp.Either GHC.Base.String GHC.Types.Double
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ a :: GHC.Base.String ->
+                 Interp.evaluate3
+                   (Parser.parseExpr1 a)
+                     `cast`
+                   (Parser.NTCo:HappyIdentity[0]
+                        (UnivCo mkUnsafeCo representational (Parser.HappyAbsSyn
+                                                               Declare.Exp
+                                                               Declare.Exp
+                                                               Declare.Exp
+                                                               Declare.Exp) Declare.Exp))) -}
+7a30564d19453e85d24714b39f69c564
+  evaluate :: Declare.Exp -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+b9248a685ec5c5f8da78c7fa899689a9
+  evaluate2 ::
+    Declare.Exp -> Interp.Either GHC.Base.String GHC.Types.Double
+  {- Arity: 1, Strictness: <S,1*U> -}
+64ae821cf8073879d676d688f1841041
+  evaluate3 ::
+    Declare.Exp -> Interp.Either GHC.Base.String GHC.Types.Double
+  {- Arity: 1, Strictness: <S,1*U> -}
+a9533d7c99ae7d03570db1fd2e31122d
+  safeHead :: [a] -> Interp.Either GHC.Base.String a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ds :: [a] ->
+                 case ds of wild {
+                   [] -> Interp.safeHead1 @ a
+                   : x ds1 -> Interp.Right @ GHC.Base.String @ a x }) -}
+4b62329a70957aaf58b42bab3bf6b4a3
+  safeHead1 :: Interp.Either GHC.Base.String a
+  {- Strictness: m1,
+     Unfolding: (\ @ a ->
+                 Interp.Left @ GHC.Base.String @ a Interp.safeHead2) -}
+5b72e4df7b6d94b938a1a6a9e00dede3
+  safeHead2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "can't access the head of an empty list"#) -}
+instance GHC.Show.Show [Interp.Either] = Interp.$fShowEither
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

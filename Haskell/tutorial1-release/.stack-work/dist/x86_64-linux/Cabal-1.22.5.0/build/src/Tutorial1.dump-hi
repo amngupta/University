@@ -1,0 +1,265 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-15 06:12:50.44684 UTC
+
+interface tutor_LBoYk3wLffr056PhhzJCTy:Tutorial1 7103
+  interface hash: 94001b69409cc985e9e224b49213a05b
+  ABI hash: 0b182b6ee193bb6665d0be8f0597efb5
+  export-list hash: ebf4dbc7ac407398a26453ead5d70457
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tutorial1.absolute
+  Tutorial1.ascii
+  Tutorial1.catMaybes
+  Tutorial1.factorial
+  Tutorial1.fibonacci
+  Tutorial1.filterList
+  Tutorial1.mapList
+  Tutorial1.nested_if1
+  Tutorial1.nested_if2
+  Tutorial1.safeHead
+  Tutorial1.tl
+  Tutorial1.zipList
+  Tutorial1.zipSum
+  Tutorial1.Maybe{Tutorial1.Just Tutorial1.Nothing}
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+30e8c3b80d5116aa6a28b4e94a1f33f0
+  $fShowMaybe :: GHC.Show.Show a => GHC.Show.Show (Tutorial1.Maybe a)
+  DFunId[0]
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a $dShow :: GHC.Show.Show a.
+                  @ (Tutorial1.Maybe a)
+                  (Tutorial1.$fShowMaybe_$cshowsPrec @ a $dShow)
+                  (Tutorial1.$fShowMaybe_$cshow @ a $dShow)
+                  (Tutorial1.$fShowMaybe_$cshowList @ a $dShow) -}
+9bc21229bd83b2678283f3f200d69d74
+  $fShowMaybe1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+b7ada388cbd76de499e7e5096c3f6a49
+  $fShowMaybe2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Just "#) -}
+b896071e978477d9d2881c1cce0b3cbe
+  $fShowMaybe3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11) -}
+b5156154880f98570108432acd260126
+  $fShowMaybe4 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++ @ GHC.Types.Char Tutorial1.$fShowMaybe5) -}
+fc680d3e77e38a8ce85793b3d354da2f
+  $fShowMaybe5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Nothing"#) -}
+30e8c3b80d5116aa6a28b4e94a1f33f0
+  $fShowMaybe_$cshow ::
+    GHC.Show.Show a => Tutorial1.Maybe a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   $dShow :: GHC.Show.Show a
+                   x :: Tutorial1.Maybe a ->
+                 case x of wild {
+                   Tutorial1.Nothing -> Tutorial1.$fShowMaybe5
+                   Tutorial1.Just b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Tutorial1.$fShowMaybe2
+                        (GHC.Show.showsPrec
+                           @ a
+                           $dShow
+                           Tutorial1.$fShowMaybe3
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+30e8c3b80d5116aa6a28b4e94a1f33f0
+  $fShowMaybe_$cshowList ::
+    GHC.Show.Show a => [Tutorial1.Maybe a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   $dShow :: GHC.Show.Show a
+                   eta :: [Tutorial1.Maybe a]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (Tutorial1.Maybe a)
+                   (Tutorial1.$fShowMaybe_$cshowsPrec
+                      @ a
+                      $dShow
+                      Tutorial1.$fShowMaybe1)
+                   eta
+                   eta1) -}
+30e8c3b80d5116aa6a28b4e94a1f33f0
+  $fShowMaybe_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> Tutorial1.Maybe a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   $dShow :: GHC.Show.Show a
+                   ds :: GHC.Types.Int
+                   ds1 :: Tutorial1.Maybe a ->
+                 case ds1 of wild {
+                   Tutorial1.Nothing -> Tutorial1.$fShowMaybe4
+                   Tutorial1.Just b1
+                   -> case ds of wild1 { GHC.Types.I# x ->
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a $dShow Tutorial1.$fShowMaybe3 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11) of wild2 {
+                        GHC.Types.False
+                        -> \ x1 :: GHC.Base.String ->
+                           GHC.Base.++ @ GHC.Types.Char Tutorial1.$fShowMaybe2 (g x1)
+                        GHC.Types.True
+                        -> \ x1 :: GHC.Base.String ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows9
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Tutorial1.$fShowMaybe2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1))) } } }) -}
+6c3e128618b3c6a53c08131f885fd740
+  $wfactorial :: GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+e6a02b1dc2763a98e99682419ef5909d
+  $wfibonacci :: GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+30e8c3b80d5116aa6a28b4e94a1f33f0
+  data Maybe a = Nothing | Just a
+    Promotable
+406f7838644a21d1788c3e4f596b525c
+  absolute :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: GHC.Types.Int ->
+                 case x of wild { GHC.Types.I# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x1 0) of wild1 {
+                   GHC.Types.False -> wild
+                   GHC.Types.True -> GHC.Types.I# (GHC.Prim.negateInt# x1) } }) -}
+51d248be9c3774e40052a89461462a69
+  ascii :: [GHC.Types.Char] -> [GHC.Types.Int]
+  {- Strictness: b -}
+e96e4b11d9361337fd4df8ce13a7269f
+  catMaybes :: [Tutorial1.Maybe a] -> [a]
+  {- Strictness: b -}
+748a70762e683c238736f9be670e273f
+  factorial :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Tutorial1.$wfactorial ww1 of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+ef7eb413ffe8f4223f5a3db297cb4e4a
+  fibonacci :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Tutorial1.$wfibonacci ww1 of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+ca2d9753d3cdc5abfd86ac4e68644bab
+  filterList :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Strictness: b -}
+e440dbfe66ea9e2800e490dd995154ea
+  mapList :: (a -> b) -> [a] -> [b]
+  {- Strictness: b -}
+b579f825782f15ec241ccc033c5800d5
+  nested_if1 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: GHC.Types.Int ->
+                 case x of wild { GHC.Types.I# x1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x1 0) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# x1 10) of wild2 {
+                        GHC.Types.False -> Tutorial1.nested_if4 GHC.Types.True -> wild }
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# (GHC.Prim.negateInt# x1) 10) of wild2 {
+                        GHC.Types.False -> Tutorial1.nested_if4
+                        GHC.Types.True -> wild } } }) -}
+580cc7acc146c5e9a6d61a2379e0af30
+  nested_if2 :: (GHC.Num.Num a, GHC.Classes.Ord a) => a -> a
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,1*C1(U),A,A,C(U))><S(LLLC(C(S))LLLL),U(A,A,1*C1(C1(U)),1*C1(C1(U)),A,A,A,A)><S,U>,
+     Unfolding: (\ @ a
+                   $dNum :: GHC.Num.Num a
+                   $dOrd :: GHC.Classes.Ord a
+                   x :: a ->
+                 case GHC.Classes.<=
+                        @ a
+                        $dOrd
+                        (case GHC.Classes.<
+                                @ a
+                                $dOrd
+                                x
+                                (GHC.Num.fromInteger @ a $dNum Tutorial1.nested_if7) of wild {
+                           GHC.Types.False -> x
+                           GHC.Types.True -> GHC.Num.negate @ a $dNum x })
+                        (GHC.Num.fromInteger @ a $dNum Tutorial1.nested_if6) of wild {
+                   GHC.Types.False -> Tutorial1.nested_if5 @ a
+                   GHC.Types.True -> x }) -}
+c7a7cd2a33cd7da14957b1ef89df73ec
+  nested_if4 :: GHC.Types.Int
+  {- Strictness: b -}
+b102fe7d557da44eb6218150de71b4e8
+  nested_if5 :: a
+  {- Strictness: b -}
+ad277bbfeeb3c92f228c5ee374643c67
+  nested_if6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 10) -}
+31c06fe6fc720f2fd9e2fb5ca8fc3bcf
+  nested_if7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+a5076c89c848858ab80665ca998e89d2
+  safeHead :: [a] -> Tutorial1.Maybe a
+  {- Strictness: b -}
+721d8be2fef2587de882f1e74885c247
+  tl :: [a] -> [a]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ds :: [a] ->
+                 case ds of wild { [] -> Tutorial1.tl1 @ a : xs x -> x }) -}
+130e45e144b386ec27adf89e93d2e35e
+  tl1 :: [a]
+  {- Strictness: b -}
+b665fc92c134dc7a5d5ef548f0d378dc
+  zipList :: [a] -> [b] -> [(a, b)]
+  {- Strictness: b -}
+b7e55672b51adb96f1c59a4db2c2ad1f
+  zipSum :: [GHC.Types.Int] -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Strictness: b -}
+instance GHC.Show.Show [Tutorial1.Maybe] = Tutorial1.$fShowMaybe
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

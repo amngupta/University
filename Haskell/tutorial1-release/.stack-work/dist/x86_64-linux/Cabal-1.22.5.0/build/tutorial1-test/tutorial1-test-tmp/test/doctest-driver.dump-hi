@@ -1,0 +1,113 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-15 05:35:20.901487 UTC
+
+interface main@main:Main 7103
+  interface hash: ffd12d91b559faae59da61ba58d83f43
+  ABI hash: df0f0591ce53f90e8e45308ca41dccc4
+  export-list hash: 33d095cc6fc431ad13db7791da01a55f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: dfa26d9541d06139ed65b9dee9554123
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 base-compat-0.9.1@basec_3Zy8UsyHmBEEwbReR8x1KT
+                      binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bin-package-db-0.0.0.0@binpa_JPOxOw4FLalDxRNtBqZ2ji
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm
+                      doctest-0.11.0@docte_8onqlrcIvx7I8cCoo1ZPfl
+                      filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m ghc-7.10.3
+                      ghc-prim-0.4.0.0 ghc-paths-0.1.0.9@ghcpa_5rDnX7hezYDKAziKzjDg9e
+                      hoopl-3.10.0.2@hoopl_FCWMV1gJiCi02IwN4CnRgk
+                      hpc-0.6.0.2@hpc_FUjQx3d1H3dEEtLFWv7hFw integer-gmp-1.0.0.0
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      process-1.2.3.0@proce_52AgREEfSrnJLlkGV9YZZJ
+                      syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE template-haskell-2.10.0.0
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      unix-2.7.1.0@unix_KZL8h98IqDM57kQSPo1mKx
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bin-package-db-0.0.0.0@binpa_JPOxOw4FLalDxRNtBqZ2ji:GHC.PackageDb
+         ghc-7.10.3:BlockId ghc-7.10.3:DsMonad ghc-7.10.3:LoadIface
+         ghc-7.10.3:PPC.Ppr ghc-7.10.3:PprCmm ghc-7.10.3:PprCmmDecl
+         ghc-7.10.3:PprCmmExpr ghc-7.10.3:PprCore ghc-7.10.3:SPARC.Ppr
+         ghc-7.10.3:TcEnv ghc-7.10.3:TcRnMonad ghc-7.10.3:Type
+         ghc-7.10.3:X86.Ppr
+         syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE:Data.Generics.Instances
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         ghc-7.10.3:PlaceHolder ghc-7.10.3:TrieMap
+                         hoopl-3.10.0.2@hoopl_FCWMV1gJiCi02IwN4CnRgk:Compiler.Hoopl.Block
+                         hoopl-3.10.0.2@hoopl_FCWMV1gJiCi02IwN4CnRgk:Compiler.Hoopl.Dataflow
+                         hoopl-3.10.0.2@hoopl_FCWMV1gJiCi02IwN4CnRgk:Compiler.Hoopl.Fuel
+                         hoopl-3.10.0.2@hoopl_FCWMV1gJiCi02IwN4CnRgk:Compiler.Hoopl.Label
+                         hoopl-3.10.0.2@hoopl_FCWMV1gJiCi02IwN4CnRgk:Compiler.Hoopl.Unique
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  doctest-0.11.0@docte_8onqlrcIvx7I8cCoo1ZPfl:Run 27e1999240f9cc2f491d62d8c00240f5
+import  -/  doctest-0.11.0@docte_8onqlrcIvx7I8cCoo1ZPfl:Test.DocTest 52a7d7af63060391206e5478565f218d
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+a8c6290cb686f3021c22ef5b15e1f07f
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+8af1f4b7792a06f949ea34f34458cd96
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Unfolding: (Run.doctest1 Main.main2) -}
+bccbf86d73f9172411f8f98f370760f3
+  main2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.: @ GHC.Base.String Main.main5 Main.main3) -}
+e6693e8fb4117e149122632ae9224b35
+  main3 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main4
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+13d8160b4d40253d8279c0ddbc960660
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/aman/Desktop/Haskell/tutorial1-release/src/Tutorial1.hs"#) -}
+8677d779dcf500fc0aae4297693bb309
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-i/src"#) -}
+d91628ef80dbf1cf388b354167137034
+  main6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
