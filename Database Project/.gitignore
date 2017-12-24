@@ -1,0 +1,6 @@
+build/*
+node_modules/*
+
+code.txt
+
+config.json
